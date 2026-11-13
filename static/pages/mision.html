@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WONDR - Misión</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-brand">WONDR</div>
+            <a href="dashboard.html" class="nav-item"><span class="nav-icon"></span>Inicio</a>
+            <a href="unidades.html" class="nav-item"><span class="nav-icon"></span>Misiones</a>
+            <a href="mision.html" class="nav-item active"><span class="nav-icon"></span>Retos</a>
+            <a href="arbol.html" class="nav-item"><span class="nav-icon"></span>Logros</a>
+            <a href="#" class="nav-item"><span class="nav-icon"></span>Progreso</a>
+            <a href="#" class="nav-item"><span class="nav-icon"></span>Recursos</a>
+            <div class="user-avatar"></div>
+        </aside>
+        <main class="main-content">
+            <div class="mission-header">
+                <h1 style="font-weight: 500;">Misión - Tema</h1>
+                <div class="btn-secondary" style="border-color: var(--w-yellow); font-weight: 700;">02:05 restantes</div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill"></div>
+            </div>
+            
+            <div class="mission-layout">
+                <!-- Sidebar Conceptos -->
+                <div class="mission-sidebar">
+                    <h3 style="font-weight: 700;">Tarjetas de conceptos</h3>
+                    <div class="concept-card">Concepto D</div>
+                    <div class="concept-card">Concepto E</div>
+                    <div class="concept-card">Concepto F</div>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-top: 1rem;">Sin cuadros de texto libre.</p>
+                </div>
+                
+                <!-- Lienzo -->
+                <div class="mission-canvas">
+                    <div class="canvas-area">
+                        <!-- Canvas Mock -->
+                        <svg style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+                            <path d="M 120 70 Q 300 20 480 70" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-dasharray="6,6"/>
+                            <path d="M 100 100 Q 150 250 280 280" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-dasharray="6,6"/>
+                            <path d="M 500 100 Q 450 250 320 280" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-dasharray="6,6"/>
+                        </svg>
+                        
+                        <div class="concept-node" style="top: 50px; left: 30px;">Concepto A</div>
+                        <div class="concept-node" style="top: 50px; right: 30px;">Concepto B</div>
+                        <div class="concept-node" style="bottom: 30px; left: 50%; transform: translateX(-50%);">Concepto C</div>
+                    </div>
+                    <div class="audio-timeline">
+                        <div style="width: 30px; height: 30px; background: #0f172a; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff;">▶</div>
+                        <div class="audio-wave">
+                            <div class="wave-bar" style="height: 6px;"></div>
+                            <div class="wave-bar" style="height: 12px;"></div>
+                            <div class="wave-bar" style="height: 8px;"></div>
+                            <div class="wave-bar" style="height: 16px;"></div>
+                            <div class="wave-bar" style="height: 24px;"></div>
+                            <div class="wave-bar" style="height: 10px;"></div>
+                            <div class="wave-bar" style="height: 14px;"></div>
+                            <div class="wave-bar" style="height: 20px;"></div>
+                            <div class="wave-bar" style="height: 8px;"></div>
+                            <div class="wave-bar" style="height: 24px;"></div>
+                            <div class="wave-bar" style="height: 12px;"></div>
+                            <div class="wave-bar" style="height: 18px;"></div>
+                            <div class="wave-bar" style="height: 6px;"></div>
+                            <div class="wave-bar" style="height: 14px;"></div>
+                            <div class="wave-bar" style="height: 22px;"></div>
+                            <div class="wave-bar" style="height: 10px;"></div>
+                        </div>
+                        <div style="font-size: 0.85rem; font-weight: 600;">00:11</div>
+                    </div>
+                </div>
+                
+                <!-- Grabadora -->
+                <div class="mission-recorder">
+                    <h3 style="font-weight: 700;">Grabadora de argumentación</h3>
+                    <button class="btn-record">🗣</button>
+                    <button class="btn-record" style="width: 60px; height: 60px; font-size: 1.5rem; margin-top: -10px;">⏸</button>
+                    <p style="font-size: 0.9rem; font-weight: 600; margin-top: 1rem;">Grabando • 00:11</p>
+                    <p class="text-muted" style="font-size: 0.85rem;">Justifica la conexión con tu voz.</p>
+                </div>
+            </div>
+            
+            <div class="floating-counter">N misiones activas</div>
+            <a href="../../final.html" class="fab-help">?</div>
+        </main>
+    </div>
+</body>
+</html>

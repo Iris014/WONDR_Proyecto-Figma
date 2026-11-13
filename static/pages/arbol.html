@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WONDR - Árbol de Progreso</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-brand">WONDR</div>
+            <a href="dashboard.html" class="nav-item"><span class="nav-icon"></span>Inicio</a>
+            <a href="unidades.html" class="nav-item"><span class="nav-icon"></span>Misiones</a>
+            <a href="mision.html" class="nav-item"><span class="nav-icon"></span>Retos</a>
+            <a href="arbol.html" class="nav-item active"><span class="nav-icon"></span>Logros</a>
+            <a href="#" class="nav-item"><span class="nav-icon"></span>Progreso</a>
+            <a href="#" class="nav-item"><span class="nav-icon"></span>Recursos</a>
+            <div class="user-avatar"></div>
+        </aside>
+        <main class="main-content">
+            <div class="breadcrumb">LOGROS > ÁRBOL DE PROGRESO</div>
+            <h1 style="font-size: 2.5rem; font-weight: 500;">Árbol de progreso</h1>
+            
+            <div class="tree-layout">
+                <div class="tree-canvas">
+                    <!-- Tree Mock SVG -->
+                    <svg class="tree-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M200,400 L200,150" stroke="#785c45" stroke-width="12" stroke-linecap="round"/>
+                        <path d="M200,300 L120,230" stroke="#785c45" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M200,250 L280,180" stroke="#785c45" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M200,200 L140,140" stroke="#785c45" stroke-width="8" stroke-linecap="round"/>
+                        
+                        <!-- Nodes -->
+                        <circle cx="120" cy="230" r="20" fill="url(#gradYellow)"/>
+                        <circle cx="280" cy="180" r="25" fill="url(#gradPurple)"/>
+                        <circle cx="140" cy="140" r="18" fill="url(#gradOrange)"/>
+                        <circle cx="200" cy="100" r="22" fill="#e2e8f0"/>
+                        
+                        <!-- Pink connection dots -->
+                        <circle cx="160" cy="265" r="6" fill="#f472b6"/>
+                        <circle cx="240" cy="215" r="6" fill="#f472b6"/>
+                        <circle cx="170" cy="170" r="6" fill="#f472b6"/>
+                        <circle cx="240" cy="150" r="6" fill="#f472b6"/>
+
+                        <defs>
+                            <radialGradient id="gradYellow" cx="30%" cy="30%" r="70%">
+                                <stop offset="0%" stop-color="#fef08a" />
+                                <stop offset="100%" stop-color="#eab308" />
+                            </radialGradient>
+                            <radialGradient id="gradPurple" cx="30%" cy="30%" r="70%">
+                                <stop offset="0%" stop-color="#e9d5ff" />
+                                <stop offset="100%" stop-color="#a855f7" />
+                            </radialGradient>
+                            <radialGradient id="gradOrange" cx="30%" cy="30%" r="70%">
+                                <stop offset="0%" stop-color="#fed7aa" />
+                                <stop offset="100%" stop-color="#f97316" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+                
+                <div class="tree-info">
+                    <h3>Retroalimentación visual del proceso</h3>
+                    <ul>
+                        <li>🌸 Ramas de mejoras</li>
+                        <li>✨ Nodos de logros</li>
+                    </ul>
+                    <p class="text-muted">En lugar de una nota inmediata, el esfuerzo del proceso se recompensa con dinámicas como presentaciones y cuestionarios.</p>
+                </div>
+            </div>
+            <a href="../../final.html" class="fab-help">?</div>
+        </main>
+    </div>
+</body>
+</html>
