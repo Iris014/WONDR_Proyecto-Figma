@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WONDR - Árbol de Progreso</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="app-layout" style="background: #fff;">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">WONDR</div>
+            <div class="nav-item"><span class="nav-icon"></span>Inicio</div>
+            <div class="nav-item"><span class="nav-icon"></span>Misiones</div>
+            <div class="nav-item"><span class="nav-icon"></span>Clases</div>
+            <div class="nav-item active"><span class="nav-icon"></span>Progreso</div>
+            <div class="circle-btn bg-white mt-auto" style="width:36px; height:36px; color:#18181b;"></div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <p class="text-sm text-muted font-bold mb-0 uppercase">Progreso > Árbol de progreso</p>
+            <h1 class="mb-4">Árbol de progreso</h1>
+
+            <div class="layout-tree w-100">
+                <!-- Columna Izquierda: Indice -->
+                <div>
+                    <div class="bg-purple-light p-2 rounded-xl mb-3 flex-center justify-between shadow-sm">
+                        <div class="flex-center gap-2">
+                            <div class="icon-circle bg-purple text-white" style="width:40px;height:40px;">🌲</div>
+                            <div>
+                                <h3 class="mb-0 text-lg">Materia</h3>
+                                <p class="text-xs text-muted mb-0">N/N misiones</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="unit-row"><div class="w-60px"><span class="text-xs text-muted font-bold uppercase">Unidad 1</span><br><span class="text-sm font-bold">Tema 1</span></div></div>
+                    <div class="unit-row"><div class="w-60px"><span class="text-xs text-muted font-bold uppercase">Unidad 2</span><br><span class="text-sm font-bold">Tema 2</span></div></div>
+                    <div class="unit-row"><div class="w-60px"><span class="text-xs text-muted font-bold uppercase">Unidad 3</span><br><span class="text-sm font-bold">Tema 3</span></div></div>
+                    <div class="unit-row"><div class="w-60px"><span class="text-xs text-muted font-bold uppercase">Unidad 4</span><br><span class="text-sm font-bold">Tema 4</span></div></div>
+                    <div class="unit-row"><div class="w-60px"><span class="text-xs text-muted font-bold uppercase">Unidad 5</span><br><span class="text-sm font-bold">Tema 5</span></div></div>
+                </div>
+                
+                <!-- Columna Derecha: Contenido y Arbol -->
+                <div>
+                    <!-- Header -->
+                    <div class="flex-center justify-between w-100 mb-1">
+                        <div class="flex-center gap-1 text-purple">
+                            <span class="icon-circle bg-transparent" style="width:24px;height:24px;">🏠</span>
+                            <span class="font-bold">Materia</span>
+                        </div>
+                        <div class="flex-center gap-3">
+                            <span class="text-sm font-bold text-title">N semanas &nbsp;<span class="text-muted">Nivel N</span></span>
+                            <div class="progress-bar-wrap mb-0" style="width: 150px; height: 8px;">
+                                <div class="progress-bar-fill" style="width: 65%;"></div>
+                            </div>
+                            <button class="btn-hero" style="padding: 0.5rem 1rem;">Siguiente misión →</button>
+                        </div>
+                    </div>
+                    
+                    <h2 style="font-size:2.5rem;" class="mb-0">Materia</h2>
+                    <p class="text-sm text-muted mb-3">Dominio del curso: [00]%</p>
+                    
+                    <!-- Leyenda -->
+                    <div class="flex-center justify-start gap-3 text-xs text-muted mb-4 font-bold">
+                        <span class="flex-center gap-1"><span class="text-purple" style="font-size:1.2rem;">❀</span> Completada</span>
+                        <span class="flex-center gap-1"><span class="text-yellow" style="font-size:1.2rem;">◑</span> En progreso</span>
+                        <span class="flex-center gap-1"><span class="text-muted" style="font-size:1.2rem;">○</span> Pendiente</span>
+                        <span class="flex-center gap-1"><span class="text-muted" style="font-size:1.2rem;">🔒</span> Bloqueada</span>
+                        <span class="flex-center gap-1 ml-4" style="margin-left:1rem;"><span class="text-purple">🎙</span> Nota de voz</span>
+                        <span class="flex-center gap-1"><span class="text-purple">🧩</span> Mapa</span>
+                        <span class="flex-center gap-1"><span class="text-purple">⏱</span> Micro-reto</span>
+                        <span class="flex-center gap-1"><span class="text-purple">🌲</span> Misión final</span>
+                    </div>
+
+                    <!-- Split visual inferior -->
+                    <div class="grid-mission w-100" style="grid-template-columns: 1fr 1fr; gap:3rem;">
+                        
+                        <!-- Lista de Unidades Interactivas -->
+                        <div class="flex-col gap-2">
+                            <!-- U1 -->
+                            <div class="flex-center justify-start gap-3 mb-2">
+                                <span class="text-sm text-title w-60px">Unidad 1</span>
+                                <div class="flex-center gap-1">
+                                    <div class="unit-icon rounded-full">🎙</div>
+                                    <div class="unit-icon rounded-full">🧩</div>
+                                    <div class="unit-icon rounded-full">✍️</div>
+                                    <div class="unit-icon rounded-full">⏱</div>
+                                    <div class="unit-icon rounded-full">🧩</div>
+                                    <div class="unit-icon rounded-full">🌲</div>
+                                </div>
+                            </div>
+                            <!-- U2 Activa -->
+                            <div class="bg-purple-light p-3 rounded-xl mb-2">
+                                <div class="flex-center justify-start gap-3 mb-2">
+                                    <span class="text-sm font-bold text-title w-60px">Unidad 2</span>
+                                    <span class="text-xs font-bold text-purple">✓ EMPEZADA ESTA SEMANA</span>
+                                </div>
+                                <div class="flex-center justify-start gap-3 pl-4" style="padding-left:calc(60px + 1rem);">
+                                    <div class="flex-col align-center"><div class="unit-icon rounded-full mb-1" style="width:48px;height:48px;">🎙</div><span class="text-xs">Nota de voz</span></div>
+                                    <div class="flex-col align-center"><div class="unit-icon rounded-full mb-1" style="width:48px;height:48px;">🧩</div><span class="text-xs">Mapa</span></div>
+                                    <div class="flex-col align-center"><div class="unit-icon rounded-full mb-1" style="width:48px;height:48px;">✍️</div><span class="text-xs">Texto libre</span></div>
+                                    <div class="flex-col align-center"><div class="unit-icon inactive rounded-full mb-1 bg-white" style="width:48px;height:48px; border-color:var(--w-yellow); color:var(--text-title);">⏱</div><span class="text-xs">Micro-reto</span></div>
+                                    <div class="flex-col align-center"><div class="unit-icon inactive rounded-full mb-1 bg-white text-purple" style="width:48px;height:48px; border-color:transparent;">🌲</div><span class="text-xs text-purple">Misión final</span></div>
+                                </div>
+                            </div>
+                            <!-- U3 -->
+                            <div class="flex-center justify-start gap-3 mb-2">
+                                <span class="text-sm text-title w-60px">Unidad 3</span>
+                                <div class="flex-center gap-1">
+                                    <div class="unit-icon rounded-full">🎙</div>
+                                    <div class="unit-icon rounded-full">🧩</div>
+                                    <div class="unit-icon inactive rounded-full bg-white text-dark">✍️</div>
+                                    <div class="unit-icon inactive rounded-full bg-white text-purple">⏱</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                </div>
+                            </div>
+                            <!-- U4 -->
+                            <div class="flex-center justify-start gap-3 mb-2">
+                                <span class="text-sm text-title w-60px">Unidad 4</span>
+                                <div class="flex-center gap-1">
+                                    <div class="unit-icon rounded-full">🎙</div>
+                                    <div class="unit-icon inactive rounded-full bg-white text-dark">🧩</div>
+                                    <div class="unit-icon inactive rounded-full bg-white text-purple">✍️</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                </div>
+                            </div>
+                            <!-- U5 -->
+                            <div class="flex-center justify-start gap-3 mb-2">
+                                <span class="text-sm text-title w-60px">Unidad 5</span>
+                                <div class="flex-center gap-1">
+                                    <div class="unit-icon inactive rounded-full bg-white text-purple" style="border: 2px solid var(--w-yellow);">🎙</div>
+                                    <div class="unit-icon inactive rounded-full bg-white text-purple">🧩</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                    <div class="unit-icon inactive rounded-full">🔒</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gráfico Árbol e Info -->
+                        <div class="flex-col">
+                            <div class="tree-visual-box flex-center mb-3">
+                                <svg viewBox="0 0 200 200" style="width: 100%; max-width: 250px;">
+                                    <path d="M100,200 L100,60" stroke="#785c45" stroke-width="8" stroke-linecap="round"/>
+                                    <path d="M100,160 L50,110" stroke="#785c45" stroke-width="6" stroke-linecap="round"/>
+                                    <path d="M100,120 L150,80" stroke="#785c45" stroke-width="6" stroke-linecap="round"/>
+                                    <path d="M100,90 L140,50" stroke="#785c45" stroke-width="6" stroke-linecap="round"/>
+                                    <path d="M100,140 L60,80" stroke="#785c45" stroke-width="6" stroke-linecap="round"/>
+                                    <!-- Nodos -->
+                                    <circle cx="50" cy="110" r="14" fill="#fef08a"/>
+                                    <circle cx="150" cy="80" r="16" fill="#e9d5ff"/>
+                                    <circle cx="100" cy="40" r="14" fill="#e9d5ff"/>
+                                    <circle cx="140" cy="50" r="12" fill="#e9d5ff"/>
+                                    <circle cx="60" cy="80" r="14" fill="#fef08a"/>
+                                    <!-- Puntos rosa -->
+                                    <circle cx="75" cy="135" r="4" fill="#f472b6"/>
+                                    <circle cx="125" cy="100" r="4" fill="#f472b6"/>
+                                    <circle cx="125" cy="110" r="4" fill="#f472b6"/>
+                                    <circle cx="80" cy="110" r="4" fill="#f472b6"/>
+                                </svg>
+                            </div>
+                            <div class="info-box">
+                                <p class="text-sm font-bold mb-1">⏱ Tiempo estimado: <span class="font-normal text-muted">[mm:ss]</span></p>
+                                <p class="text-sm text-green font-bold mb-2">✓ Prueba de equipo: 1 min</p>
+                                <p class="text-xs text-muted mb-1 mt-2">Si tienes dudas con tu micrófono, repite la prueba:</p>
+                                <a href="sala_preparacion.html" class="text-xs text-purple font-bold" style="text-decoration: underline;">Ir a la Sala de preparación</a>
+                            </div>
+                            <div class="text-center mt-4">
+                                <h3 class="mb-1 text-lg">Prepárate antes de cada misión</h3>
+                                <p class="text-sm text-muted">En la Sala de preparación revisas las reglas y pruebas tu micrófono. El tiempo empieza solo cuando confirmas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Boton Inferior derecho ayuda -->
+            <div class="fab-container">
+                <div class="circle-btn">?</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

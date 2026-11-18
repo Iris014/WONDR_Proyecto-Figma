@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WONDR - Misión Tema</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">WONDR</div>
+            <div class="nav-item"><span class="nav-icon"></span>Inicio</div>
+            <div class="nav-item"><span class="nav-icon"></span>Misiones</div>
+            <div class="nav-item active"><span class="nav-icon"></span>Clases</div>
+            <div class="nav-item"><span class="nav-icon"></span>Progreso</div>
+            <div class="circle-btn bg-white mt-auto" style="width:36px; height:36px; color:#18181b;"></div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content flex-col">
+            <div class="flex-center justify-between w-100 mb-1">
+                <h1>Misión - Tema</h1>
+                <div class="pill-btn" style="border: 2px solid var(--w-yellow);">02:05 restantes</div>
+            </div>
+            
+            <div class="progress-bar-wrap w-100 mb-2">
+                <div class="progress-bar-fill" style="width: 100%;"></div>
+            </div>
+            
+            <p class="text-lg text-muted mb-3">Reproduce la voz del estudiante sincronizada con la construcción de su mapa conceptual para validar el aprendizaje real.</p>
+            
+            <div class="grid-mission w-100 mb-1">
+                <!-- Columna Izquierda -->
+                <div>
+                    <h3 class="mb-2">Conceptos de</h3>
+                    <div class="concept-pill shadow-sm">Concepto D</div>
+                    <div class="concept-pill shadow-sm">Concepto E</div>
+                    <div class="concept-pill shadow-sm">Concepto F</div>
+                    <p class="text-sm text-muted mt-2">Sin cuadros de texto libre.</p>
+                </div>
+                
+                <!-- Lienzo -->
+                <div class="mission-panel flex-center flex-col relative" style="min-height: 320px;">
+                    <div class="flex-center justify-between w-100 px-4" style="padding: 0 4rem; position: absolute; top: 3rem;">
+                        <span class="font-bold">Concepto A</span>
+                        <span class="text-purple font-bold" style="letter-spacing: 4px;">. . . . . . . . . .</span>
+                        <span class="font-bold">Concepto B</span>
+                    </div>
+                    <div class="flex-center w-100" style="position: absolute; bottom: 3rem;">
+                        <span class="font-bold">Concepto C</span>
+                    </div>
+                    <!-- Curved dashed lines mockup -->
+                    <svg style="position:absolute; width:100%; height:100%; top:0; left:0; pointer-events:none;">
+                        <path d="M 80,80 Q 120,200 200,240" fill="none" stroke="#a855f7" stroke-width="3" stroke-dasharray="4,6"/>
+                        <path d="M 400,80 Q 360,200 280,240" fill="none" stroke="#a855f7" stroke-width="3" stroke-dasharray="4,6"/>
+                    </svg>
+                </div>
+                
+                <!-- Evidencia Sincronizada -->
+                <div class="mission-panel">
+                    <h3 class="mb-2">Evidencia sincronizada</h3>
+                    <p class="text-sm mb-2 text-muted">00:04 · Conecta A con B</p>
+                    <p class="text-sm mb-2 text-muted">00:12 · Justifica con su voz</p>
+                    <p class="text-sm mb-2 text-muted">00:31 · Añade C al mapa</p>
+                </div>
+            </div>
+
+            <!-- Audio Player -->
+            <div class="audio-player w-100">
+                <div class="play-btn">▶</div>
+                <div class="flex-center flex-1 justify-center">
+                    <div class="wave-bar active" style="height: 10px;"></div>
+                    <div class="wave-bar active" style="height: 18px;"></div>
+                    <div class="wave-bar active" style="height: 12px;"></div>
+                    <div class="wave-bar active" style="height: 24px;"></div>
+                    <div class="wave-bar active" style="height: 14px;"></div>
+                    <div class="wave-bar active" style="height: 30px;"></div>
+                    <div class="wave-bar active" style="height: 16px;"></div>
+                    <div class="wave-bar active" style="height: 10px;"></div>
+                    <div class="wave-bar active" style="height: 20px;"></div>
+                    <div class="wave-bar active" style="height: 12px;"></div>
+                    <div class="wave-bar active" style="height: 26px;"></div>
+                    <div class="wave-bar active" style="height: 16px;"></div>
+                    <div class="wave-bar active" style="height: 22px;"></div>
+                    <div class="wave-bar active" style="height: 14px;"></div>
+                    <div class="wave-bar active" style="height: 10px;"></div>
+                </div>
+                <span class="font-bold text-muted text-sm">00:12 / mm:ss</span>
+            </div>
+
+            <div class="fab-container">
+                <div class="pill-btn">N clases</div>
+                <div class="circle-btn">?</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WONDR - Prueba de Equipo</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">WONDR</div>
+            <a href="dashboard.html" class="nav-item"><span class="nav-icon"></span>Inicio</a>
+            <a href="prueba_equipo.html" class="nav-item active"><span class="nav-icon"></span>Misiones</a>
+            <a href="mision.html" class="nav-item"><span class="nav-icon"></span>Retos</a>
+            <a href="arbol_progreso.html" class="nav-item"><span class="nav-icon"></span>Logros</a>
+            <div class="user-avatar"></div>
+        </aside>
+
+        <!-- Content -->
+        <main class="main-content" style="display:flex; flex-direction:column; justify-content:space-between; padding-bottom: 2rem;">
+            
+            <div class="content-split" style="align-items: stretch; gap: 3rem;">
+                
+                <!-- Izquierda: Prueba -->
+                <div class="content-main card border-light text-center p-4 flex-center" style="flex-direction:column; justify-content:center; border-radius: 16px;">
+                    <h2 style="font-size:2rem; font-weight:500; margin-bottom: 2rem;">Prueba de equipo</h2>
+                    <p class="text-muted text-lg mb-2">Nivel de volumen</p>
+                    
+                    <!-- Wave -->
+                    <div class="audio-wave my-1 justify-center" style="height: 60px; gap: 10px; margin-bottom:3rem;">
+                        <div class="wave-bar" style="height: 20px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 35px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 50px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 30px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 45px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 20px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 60px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 30px; width:10px;"></div>
+                        <div class="wave-bar" style="height: 40px; width:10px;"></div>
+                    </div>
+
+                    <!-- Vol Progress -->
+                    <div class="progress-bar-wrap w-100 max-w-600 mx-auto" style="height:16px; margin-bottom: 3rem; background: #334155;">
+                        <div class="progress-bar-fill" style="background:#4ade80; width:65%;"></div>
+                    </div>
+
+                    <!-- Icons -->
+                    <div class="flex-center gap-2 mb-2">
+                        <div class="icon-box text-purple" style="font-size:1.5rem; width:40px; height:40px;">🎙</div>
+                        <div class="icon-box text-red" style="font-size:1.5rem; width:40px; height:40px; border:2px solid #e11d48; border-radius:50%; display:flex; justify-content:center; align-items:center;">●</div>
+                        <div class="icon-box text-purple" style="font-size:1.5rem; width:40px; height:40px;">🔊</div>
+                    </div>
+
+                    <!-- Chips -->
+                    <div class="flex-center gap-1 mt-2 flex-wrap">
+                        <button class="chip shadow-sm" style="border:1px solid #cbd5e1;">🎙 Micrófono ▾</button>
+                        <button class="chip shadow-sm" style="border:1px solid #cbd5e1;">🔊 Altavoces ▾</button>
+                        <button class="chip shadow-sm" style="border:1px solid #cbd5e1;">📊 Ruido ▾</button>
+                        <button class="chip shadow-sm" style="border:1px solid #cbd5e1;">✨ Supresión de ruido ▾</button>
+                    </div>
+                </div>
+
+                <!-- Derecha: Tema -->
+                <div class="content-impact text-center border-none p-4 flex-center" style="flex-direction:column; justify-content:center; max-width: 450px;">
+                    <h2 style="font-size:2.2rem; font-weight:500; margin-bottom: 2rem;">Misión · Tema</h2>
+                    
+                    <div class="flex-center mb-1" style="margin-left: 20px;">
+                        <div class="icon-circle bg-pink-light" style="width:40px; height:40px; margin-left:-15px; border:2px solid #fff;"></div>
+                        <div class="icon-circle bg-pink-light" style="width:40px; height:40px; margin-left:-15px; border:2px solid #fff;"></div>
+                        <div class="icon-circle bg-pink-light" style="width:40px; height:40px; margin-left:-15px; border:2px solid #fff;"></div>
+                        <div class="icon-circle bg-purple text-white text-xs font-bold" style="width:40px; height:40px; margin-left:-15px; border:2px solid #fff; flex-direction:column; line-height:1;"><span>+</span><span>N</span></div>
+                    </div>
+                    <p class="text-body-dark text-sm mb-2" style="color:#334155;">N compañeros están en la misión</p>
+                    
+                    <div class="icon-circle bg-purple-light text-purple mx-auto mt-2 mb-2" style="width:100px; height:100px; font-size:3.5rem;">🗣</div>
+                    
+                    <button class="btn-hero full-width mb-1" style="width:100%; font-size:1.2rem; padding: 1rem;">Comenzar</button>
+                    <button class="btn-secondary full-width" style="width:100%; border-radius:999px; font-size:1.1rem; padding: 1rem;">↻ Repetir</button>
+                    
+                    <p class="text-sm text-body-dark mt-2" style="color:#334155;">El tiempo y el bloqueo empiezan al comenzar.</p>
+                </div>
+            </div>
+
+            <!-- Footer rules -->
+            <div class="text-center mt-2 pt-3" style="border-top: 1px solid var(--tech-muted);">
+                <p class="text-xs text-body-dark max-w-800 mx-auto mb-1" style="color:#334155;"><strong>Sala de preparación:</strong> el temporizador y el bloqueo de pestañas solo se activan cuando presionas «Comenzar evaluación». Puedes repetir la prueba de micrófono las veces que quieras.</p>
+                <p class="text-xs text-body-dark max-w-800 mx-auto mb-1" style="color:#334155;"><strong>Sensor de foco:</strong> si cambias de pestaña durante la misión, la grabación se pausa y la pantalla se oscurece. <a href="#" style="text-decoration:underline; color:#475569;">Más información</a></p>
+                <div class="mt-1" style="font-size:1.5rem; color:#64748b;">🛡</div>
+            </div>
+
+        </main>
+        
+        <a href="../../final.html" style="position:fixed; bottom:2rem; right:2rem; width:48px; height:48px; border-radius:50%; background:#18181b; color:#fff; display:flex; justify-content:center; align-items:center; font-size:1.5rem; font-weight:bold; cursor:pointer;">?</a>
+    </div>
+</body>
+</html>
